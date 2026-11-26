@@ -1,0 +1,19 @@
+# Godot 4+ caches and temporary files
+.godot/
+.import/
+*.translation
+*.tmp
+*.log
+
+# Build outputs / exported binaries
+dist/
+build/
+*.exe
+*.pck
+*.zip
+
+# Python & OS caches
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
