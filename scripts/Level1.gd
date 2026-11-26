@@ -549,8 +549,8 @@ func _build_interactives() -> void:
 		add_child(pad)
 		pad_nodes.append({"node": pad, "pos": PAD_POSITIONS[i], "revealed": false, "lit": false})
 
-	# 3. Hidden Signature Keepsake (3D Star Pendant or Earbuds Case!)
-	var kind := "star_pendant" if role == "boy" else "earbuds_case"
+	# 3. Hidden Signature Keepsake (3D Rose-Gold Pink Crystal Swan Necklace or Earbuds Case!)
+	var kind := "swan_necklace" if role == "boy" else "earbuds_case"
 	keepsake_node = Keepsake3D.create(kind)
 	keepsake_node.position = KEEPSAKE_POS
 	keepsake_node.visible = false
@@ -860,11 +860,11 @@ func _process(delta: float) -> void:
 		SoundFX.play("keepsake", -5.0)
 		GameJuice.hitstop(0.055, 0.08)
 		GameJuice.add_trauma(0.32)
-		_spawn_burst(KEEPSAKE_POS, Color(1.0, 0.90, 0.35), 18)
+		_spawn_burst(KEEPSAKE_POS, Color(1.0, 0.68, 0.78) if role == "boy" else Color(1.0, 0.90, 0.35), 18)
 		keepsake_node.queue_free()
 		_refresh_hud()
 		var kmsg := (
-			"捡到了「发光小星星吊坠」！这不是她一直戴着的项链吗？她一定就在前面！"
+			"捡到了「粉色水晶天鹅项链」！这不是她一直戴着的玫瑰金天鹅项链吗？她一定就在前面！"
 			if role == "boy"
 			else "捡到了「无线耳机小盒」！里面还留着余温，戴透明眼镜的他肯定就在附近！"
 		)
