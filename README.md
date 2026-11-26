@@ -1,6 +1,7 @@
 # Find U (寻找另一半) — 3D Godot 4.3 Edition
 
 一款温馨治愈风 3D 寻人冒险小游戏，使用 **Godot 4.3 (GDScript + Procedural 3D / Shaders / Procedural Audio)** 构建。
+我将利用这个小游戏记录我和赵睿的点点滴滴。
 
 ## 关卡一览
 1. **第 1 关：微光蘑菇森林** — 点亮微光蘑菇与音符石阶，拾取信物，解开溪上断桥花藤重逢。
